@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "mymodule"
+version = "0.1.0"
+description = "devcontainer_python"
+authors = ["nakai shuta <shuta.nakai@mobilus.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.291"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 200
+
+[tool.black]
+line-length = 200
